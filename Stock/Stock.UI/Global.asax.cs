@@ -7,6 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
+using Stock.UI.Infrastructure;
 
 namespace Stock.UI
 {
@@ -17,7 +18,8 @@ namespace Stock.UI
             // Code that runs on application startup
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());           
         }
     }
 }
