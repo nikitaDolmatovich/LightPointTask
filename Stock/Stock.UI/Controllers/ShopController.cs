@@ -17,10 +17,11 @@ namespace Stock.UI.Controllers
     {
         private IShopRepository shopRepository;
 
-        public ShopController(IShopRepository repo)
+        public ShopController()
         {
-            shopRepository = repo;
+            shopRepository = new EFShopRepository();
         }
+
 
         [Route("")]
         public IEnumerable<ShopViewModel> GetAll()
