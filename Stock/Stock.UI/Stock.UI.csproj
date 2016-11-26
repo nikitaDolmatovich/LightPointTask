@@ -944,6 +944,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Abstract\IProductRepository.cs" />
+    <Compile Include="Models\Abstract\IShopRepository.cs" />
+    <Compile Include="Models\Concrete\EFProductRepository.cs" />
+    <Compile Include="Models\Concrete\EFShopRepository.cs" />
+    <Compile Include="Models\Concrete\EFStockContext.cs" />
+    <Compile Include="Models\Entities\Product.cs" />
+    <Compile Include="Models\Entities\Shop.cs" />
+    <Compile Include="Models\ViewModel\ProductViewModel.cs" />
+    <Compile Include="Models\ViewModel\ShopViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -978,7 +987,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
