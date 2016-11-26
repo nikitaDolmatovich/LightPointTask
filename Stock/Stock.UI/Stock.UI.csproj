@@ -143,6 +143,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularUI\App.js" />
+    <Content Include="AngularUI\Controllers\Controllers.js" />
+    <Content Include="AngularUI\Services\Services.js" />
+    <Content Include="AngularUI\Views\productsView.html" />
+    <Content Include="AngularUI\Views\shopsView.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

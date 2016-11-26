@@ -1,0 +1,18 @@
+﻿<h1>Products</h1>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="product in products">
+        <tr>
+            <td>{{product.Name}}</td>
+            <td>{{product.Description}}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="#/shop">back</a>
