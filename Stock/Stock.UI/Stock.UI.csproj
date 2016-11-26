@@ -949,6 +949,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
+    <Compile Include="Migrations\201611260740543_Initial.cs" />
+    <Compile Include="Migrations\201611260740543_Initial.Designer.cs">
+      <DependentUpon>201611260740543_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Abstract\IProductRepository.cs" />
     <Compile Include="Models\Abstract\IShopRepository.cs" />
     <Compile Include="Models\Concrete\EFProductRepository.cs" />
@@ -992,6 +997,11 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611260740543_Initial.resx">
+      <DependentUpon>201611260740543_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
